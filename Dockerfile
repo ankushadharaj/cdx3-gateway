@@ -12,7 +12,7 @@ RUN openssl req -x509 -nodes -days 365 \
     -newkey rsa:2048 \
     -keyout /etc/ssl/nginx/self-signed.key \
     -out /etc/ssl/nginx/self-signed.crt \
-    -subj "/C=US/ST=New Jersey/L=City/O=Organization/OU=Unit/CN=localhost"
+    -subj "/C=US/ST=New Jersey/L=City/O=RPNC Systems/OU=Unit/CN=localhost"
 
 # Copy your custom Nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
